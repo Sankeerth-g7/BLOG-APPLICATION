@@ -3,13 +3,16 @@ const morgan = require('morgan');
 const mongoose = require('mongoose');
 const blogRoutes = require('./routes/blogRoutes')
 const multer = require('multer');
+const dotenv = require('dotenv');
+dotenv.config( { path: './config.env' } );
 
 
  //setting express app
 const app = express();
 
 //connect to mongodb
-const dbURI = 'INSERT YOUR DB URL HERE'
+const dbURI = process.env.dbURI;
+console.log(dbURI)
 mongoose.connect(dbURI,{useNewUrlParser: true , useUnifiedTopology: true})
 .then((result)=>{
     console.log('connected to db')
