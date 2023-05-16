@@ -2,7 +2,6 @@
 
 This is the repository for a Blog Application developed by [Sankeerth-g7](https://github.com/Sankeerth-g7). The application provides a platform for users to create and publish their own blog posts. It offers essential features such as user authentication, blog creation, editing, deletion, and a user-friendly interface for readers to browse and interact with the published content.
 
-The application is currently deployed and can be accessed at [http://bloggers.my.to/](http://bloggers.my.to/).
 
 ## Features
 
